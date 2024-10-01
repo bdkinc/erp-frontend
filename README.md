@@ -7,6 +7,7 @@ Technologies used:
 - [react-router](https://reactrouter.com/en/main) - routing library
 - [react-query](https://tanstack.com/query/latest/docs/framework/react/overview) - data state management
 - [tailwindcss](https://tailwindcss.com/docs/customizing-colors) - CSS library 
+- [AI for Code generation](https://v0.dev/chat) - v0 can be used to generate screens and interfaces
 
 # React + TypeScript + Vite
 
