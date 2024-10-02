@@ -6,6 +6,10 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+		fontFamily: {
+			sans: ['Open Sans', 'Helvetica', 'sans-serif'],
+			heading: ['Montserrat', 'Helvetica', 'sans-serif'],
+		},
   	extend: {
   		borderRadius: {
   			lg: 'var(--radius)',

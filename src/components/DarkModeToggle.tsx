@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
-import { FaMoon, FaSun } from 'react-icons/fa6'
 import * as Switch from '@radix-ui/react-switch'
+import { Sun, Moon } from 'lucide-react'
 
 function getMode() {
   return typeof window == 'undefined'
@@ -13,8 +13,8 @@ function getMode() {
 }
 
 function Icon({ mode }: { mode: string }) {
-  if (mode === 'dark') return <FaMoon />
-  if (mode === 'light') return <FaSun />
+  if (mode === 'dark') return <Moon size={16} />
+  if (mode === 'light') return <Sun size={16} />
   return null
 }
 
