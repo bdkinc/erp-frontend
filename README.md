@@ -1,6 +1,8 @@
 # BDK ERP Frontend SPA
 
-Technologies used:
+![preview](https://github.com/bdkinc/erp-frontend/blob/master/public/Screenshot%202024-10-03%20054604.png?raw=true)
+
+### Technologies used:
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [react.js](https://react.dev/) - client side library
 - [shadcn](https://ui.shadcn.com/) - ui library

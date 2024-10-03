@@ -2,23 +2,34 @@ import { ScrollArea } from '@/components/ui/scroll-area.tsx'
 import { Button } from '@/components/ui/button.tsx'
 import {
   Banknote,
-  BarChart, BookOpen, BookUser, Building2, ChartSpline,
+  BarChart,
+  BookOpen,
+  BookUser,
+  Building2,
+  ChartSpline,
   ChevronDown,
-  ChevronRight, CircleDollarSign,
+  ChevronRight,
+  CircleDollarSign,
   Coins,
   DollarSign,
   Earth,
-  FileText, Frown, Grid2X2,
+  FileText,
+  Frown,
+  Grid2X2,
   HandCoins,
   HandPlatter,
   HelpCircle,
   ListTree,
   LogOut,
-  type LucideProps, Receipt,
+  type LucideProps,
+  Receipt,
   ScrollText,
   Settings,
-  Star, TableProperties, Truck,
-  Users, WalletCards
+  Star,
+  TableProperties,
+  Truck,
+  Users,
+  WalletCards
 } from 'lucide-react'
 import {
   type ForwardRefExoticComponent,
@@ -62,97 +73,154 @@ const menuItems = [
   {
     icon: FileText,
     label: 'Billing',
-    subItems: []
+    subItems: [
+      { label: 'Team', icon: Users },
+      { label: 'Permissions', icon: Settings }
+    ]
   },
   {
     icon: ListTree,
     label: 'Bill of Material',
-    subItems: []
+    subItems: [
+      { label: 'Team', icon: Users },
+      { label: 'Permissions', icon: Settings }
+    ]
   },
   {
     icon: Banknote,
     label: 'Cash Management',
-    subItems: []
+    subItems: [
+      { label: 'Team', icon: Users },
+      { label: 'Permissions', icon: Settings }
+    ]
   },
   {
     icon: Coins,
     label: 'Cost Accounting',
-    subItems: []
+    subItems: [
+      { label: 'Team', icon: Users },
+      { label: 'Permissions', icon: Settings }
+    ]
   },
   {
     icon: Settings,
     label: 'Cross Applications',
-    subItems: []
+    subItems: [
+      { label: 'Team', icon: Users },
+      { label: 'Permissions', icon: Settings }
+    ]
   },
   {
     icon: Earth,
     label: 'Currency Translation',
-    subItems: []
+    subItems: [
+      { label: 'Team', icon: Users },
+      { label: 'Permissions', icon: Settings }
+    ]
   },
   {
     icon: HandPlatter,
     label: 'Customer Orders',
-    subItems: []
+    subItems: [
+      { label: 'Team', icon: Users },
+      { label: 'Permissions', icon: Settings }
+    ]
   },
   {
     icon: ScrollText,
     label: 'Customer Quotes',
-    subItems: []
+    subItems: [
+      { label: 'Team', icon: Users },
+      { label: 'Permissions', icon: Settings }
+    ]
   },
   {
     icon: Frown,
     label: 'Deduction Management',
-    subItems: []
+    subItems: [
+      { label: 'Team', icon: Users },
+      { label: 'Permissions', icon: Settings }
+    ]
   },
   {
     icon: Building2,
     label: 'Executive',
-    subItems: []
+    subItems: [
+      { label: 'Team', icon: Users },
+      { label: 'Permissions', icon: Settings }
+    ]
   },
   {
     icon: TableProperties,
     label: 'General Ledger',
-    subItems: []
+    subItems: [
+      { label: 'Team', icon: Users },
+      { label: 'Permissions', icon: Settings }
+    ]
   },
   {
     icon: Grid2X2,
     label: 'Inventory',
-    subItems: []
+    subItems: [
+      { label: 'Team', icon: Users },
+      { label: 'Permissions', icon: Settings }
+    ]
   },
   {
     icon: CircleDollarSign,
     label: 'Multi-currency',
-    subItems: []
+    subItems: [
+      { label: 'Team', icon: Users },
+      { label: 'Permissions', icon: Settings }
+    ]
   },
   {
     icon: BookOpen,
     label: 'Material Planning',
-    subItems: []
+    subItems: [
+      { label: 'Team', icon: Users },
+      { label: 'Permissions', icon: Settings }
+    ]
   },
   {
     icon: BookUser,
     label: 'Production Control',
-    subItems: []
+    subItems: [
+      { label: 'Team', icon: Users },
+      { label: 'Permissions', icon: Settings }
+    ]
   },
   {
     icon: WalletCards,
     label: 'Purchasing',
-    subItems: []
+    subItems: [
+      { label: 'Team', icon: Users },
+      { label: 'Permissions', icon: Settings }
+    ]
   },
   {
     icon: ChartSpline,
     label: 'Sales Analysis',
-    subItems: []
+    subItems: [
+      { label: 'Team', icon: Users },
+      { label: 'Permissions', icon: Settings }
+    ]
   },
   {
     icon: Truck,
     label: 'Shipping',
-    subItems: []
+    subItems: [
+      { label: 'Team', icon: Users },
+      { label: 'Permissions', icon: Settings }
+    ]
   },
   {
     icon: Receipt,
     label: 'Taxes',
-    subItems: []
+    subItems: [
+      { label: 'Team', icon: Users },
+      { label: 'Permissions', icon: Settings }
+    ]
   },
   {
     icon: HelpCircle,
@@ -165,7 +233,7 @@ export default function SidebarContent() {
   return (
     <div className="flex flex-col h-full p-4">
       <div className="flex items-center h-16 p-4">
-        <span className="text-2xl font-semibold font-heading">
+        <span className="text-3xl font-semibold font-heading">
           <span className="text-primary font-bold">BDK</span>
           <span>erp</span>
         </span>
@@ -177,7 +245,7 @@ export default function SidebarContent() {
           ))}
         </nav>
       </ScrollArea>
-      <div className="p-4 border-t">
+      <div className="border-t py-4">
         <Button
           variant="ghost"
           className="w-full justify-start text-destructive"
